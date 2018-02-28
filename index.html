@@ -3,13 +3,40 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Crystal Collector</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
     <script src="assets/javascript/game.js"></script>
 </head>
 <body>
-    
+    <div id="title">
+        <h1>Crystal Collector!</h1>
+    </div>
+    <div id="instructions">
+        <h2>Instructions:</h2>
+        <p>You will be given a random number at the start of the game</p>
+        <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+        <p>You win the game by matching your total score to the random number, and lose the game if your total score goes above the random number</p>
+        <p>The value of each crystal is hidden from you until you click on it.</p>
+        <p>Each time the game starts, the values of each crystal will be changed.</p>
+    </div>
+    <div id="targetNumber">
+        <h2>Target Number:<span id="randomNumber"></span></h2>
+    </div>
+    <div id="currentNumber">
+        <h2>Your Number:<span id="userNumber"></span></h2>
+    </div>
+    <div id="gems">
+        <img src="#" alt="#">
+        <img src="#" alt="#">
+        <img src="#" alt="#">
+        <img src="#" alt="#">
+    </div>
+    <div id="winCount">
+        <h2>Wins:<span id="totalWins"></span></h2>
+        <br>
+        <h2>Losses:<span id="totalLosses"></span></h2>
+    </div>
 </body>
 </html>
