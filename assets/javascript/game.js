@@ -46,28 +46,45 @@ $( document ).ready(function(){
         alert("DEFEAT!");
         reset();
     }
-    // Set win / loss conditions
-    if(userNumber === randomNumber) {
-        victory();
-    }
-    else if(userNumber > randomNumber) {
-        defeat();
-    }
-    // Click functions for gems that append #userNumber html span
+    // Click functions for gems that append #userNumber html span and check win / loss conditions
     $("#gemOne").click(function(){
         userNumber = userNumber + gemOne;
         $('#userNumber').text(userNumber);
+        if(userNumber === randomNumber) {
+            victory();
+        }
+        else if(userNumber > randomNumber) {
+            defeat();
+        }
     })
     $("#gemTwo").click(function(){
         userNumber = userNumber + gemTwo;
         $('#userNumber').text(userNumber);
+        if(userNumber === randomNumber) {
+            victory();
+        }
+        else if(userNumber > randomNumber) {
+            defeat();
+        }
     })
     $("#gemThree").click(function(){
         userNumber = userNumber + gemThree;
         $('#userNumber').text(userNumber);
+        if(userNumber === randomNumber) {
+            victory();
+        }
+        else if(userNumber > randomNumber) {
+            defeat();
+        }
     })
     $("#gemFour").click(function(){
         userNumber = userNumber + gemFour;
         $('#userNumber').text(userNumber);
+        if(userNumber === randomNumber) {
+            victory();
+        }
+        else if(userNumber > randomNumber) {
+            defeat();
+        }
     })
 });
