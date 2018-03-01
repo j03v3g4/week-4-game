@@ -6,16 +6,11 @@ $( document ).ready(function(){
     var losses = 0;
     // Random number between 19-120 for win condition
     var randomNumber = Math.floor(Math.random()*101+19);
-    console.log(randomNumber);
     // Random numbers between 1-12 for gems
     gemOne = Math.floor(Math.random()*11+1);
-    console.log(gemOne);
     gemTwo = Math.floor(Math.random()*11+1);
-    console.log(gemTwo);
     gemThree = Math.floor(Math.random()*11+1);
-    console.log(gemThree);
     gemFour = Math.floor(Math.random()*11+1);
-    console.log(gemFour);
     // Append initial target and score values to their respective html spans
     $('#userNumber').text(userNumber);
     $('#randomNumber').text(randomNumber);
